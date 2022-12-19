@@ -1,0 +1,28 @@
+.navlist {
+    display: none;
+    /* transform: translateX(120%); */
+    /* transition: all 0.5s ease; */
+    background-color: #f3eee8;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    padding: 1rem;
+    text-align: right;
+    list-style: none;
+}
+
+.navlist li {
+    margin-bottom: 1rem;
+}
+
+.navlist a {
+    color: var(--links-color);
+    text-decoration: none;
+    padding: 1rem;
+    transition: opacity 0.5s ease;
+}
+
+.navlist a:hover {
+    color: var(--primary-green-color);
+    opacity: 0.5;
+}

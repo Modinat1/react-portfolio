@@ -1,5 +1,7 @@
-
 import React from 'react';
+import {useState, useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // import images
 import myPhoto from './aasets/MyPhoto.jpeg';
@@ -19,21 +21,20 @@ import {FaRegEnvelope} from 'react-icons/fa';
 
 // Css imported
 import "./portfolio.css"
+import {Hamburger} from './components/Hamburger/Hamburger'
+import {NavLinks} from './components/NavLinks/NavLinks'
 
 
 function Portfolio() {
+  const [openBurger, setOpenBurger] = useState(false)
+  const burgerHandle = () => {
+    setOpenBurger(!openBurger)
+  }
+  useEffect(() => {
+        AOS.init();
+      }, [])
   return (
    <>
-  <meta charSet="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
-    rel="stylesheet"
-  />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="main.css" />
   <div className="container">
     {/* NAV SECTION */}
     <header>
@@ -41,30 +42,15 @@ function Portfolio() {
         <div>
           <h3>Deenah</h3>
         </div>
-        <ul className="navlist">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#projects">projects</a>
-          </li>
-          <li>
-            <a href="#contacts">Contact</a>
-          </li>
-        </ul>
-        <button id="burger" className="hamburger">
-          <span className="line-1" />
-          <span className="line-2" />
-          <span className="line-3" />
-        </button>
+        {openBurger ? <NavLinks/> : null}
+        {/* {openBurger || <NavLinks/>} */}
+        
+        <Hamburger burgerHandle = {burgerHandle} />
       </nav>
     </header>
 
     {/* HERO SECTION */}
-    <section id="hero">
+    <section data-aos="fade-right" data-aos-duration="2000" id="hero">
       <h3 className="hi">Hi, my name is</h3>
       <h1 className="profile-name">Adesola Modinat Adenike.</h1>
       <h1 className="profile-role">I build front-end products.</h1>
@@ -82,7 +68,7 @@ function Portfolio() {
     <section id="about">
       <h3>About Me</h3>
       <div className="about">
-        <div className="profile-info">
+        <div className="profile-info" data-aos="fade-right" data-aos-duration="2000">
           <p>
             I'm Modinat, I started my journey into tech in the year 2020, after
             having been encouraged by friends to pick an interest in it since
@@ -102,7 +88,7 @@ function Portfolio() {
           </p>
           <p>
             I'm currently a fellow at <span className="keyWords">Tiidelab</span>
-            , to further broaden not just my{" "}
+            , to further broaden not just my
             <span className="keyWords">technical skills</span>, but also my <span className="keyWords">soft-skills</span> adenike
             <span className="keyWords">professional skills</span>
           </p>
@@ -127,6 +113,8 @@ function Portfolio() {
             className="profile-img"
             src={myPhoto}
             alt=" "
+            data-aos="fade-left"
+            data-aos-duration="2000"
           />
         </div>
       </div>
@@ -137,10 +125,10 @@ function Portfolio() {
       <h3>Projects</h3>
       {/* pproject 1 */}
       <div className="project">
-        <div className="project-screenshot">
+        <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
           <img src={projectImg_1} alt=" " />
         </div>
-        <div className="project-info">
+        <div className="project-info" data-aos="fade-left" data-aos-duration="2000">
           <h4>AgroEase</h4>
           <p>
             An e-commerce app that enables buying and selling of farm produce
@@ -154,12 +142,12 @@ function Portfolio() {
 
       {/* project 2 */}
       <div className="project project-odd">
-        <div className="project-screenshot">
+        <div className="project-screenshot" data-aos="fade-left" data-aos-duration="2000">
           <div className="overlay">
             <img src={projectImg_2} alt=" " />
           </div>
         </div>
-        <div className="project-info">
+        <div className="project-info" data-aos="fade-right" data-aos-duration="2000">
           <h4>Weather App</h4>
           <p>
             A weather application, that uses the open weather API to give
@@ -175,10 +163,10 @@ function Portfolio() {
 
       {/* project 3 */}
       <div className="project">
-        <div className="project-screenshot">
+        <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
         <img src={projectImg_3} alt=" " />
         </div>
-        <div className="project-info">
+        <div className="project-info" data-aos="fade-left" data-aos-duration="2000">
           <h4>Paper work Technologies</h4>
           <p>
             Paper work Technologies website, a company website that offers a
@@ -195,10 +183,10 @@ function Portfolio() {
 
       {/* project 4 */}
       <div className="project">
-        <div className="project-screenshot">
+        <div className="project-screenshot" data-aos="fade-left" data-aos-duration="2000">
           <img src={projectImg_4} alt=" " />
         </div>
-        <div className="project-info">
+        <div className="project-info" data-aos="fade-right" data-aos-duration="2000">
           <h4>Joke App</h4>
           <p>An App that generates all kinds of jokes from an API</p>
           <div className="tech-used">
@@ -208,6 +196,7 @@ function Portfolio() {
           </div>
         </div>
       </div>
+
       {/* contact */}
       <section id="contacts">
         <div className="get-in-touch">
