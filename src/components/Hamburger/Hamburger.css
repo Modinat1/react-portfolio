@@ -1,8 +1,11 @@
 .hamburger {
+    position: fixed;
     background-color: transparent;
     border: none;
     cursor: pointer;
     padding: 0.5rem;
+    top: 1.5rem;
+    right: 3rem;
 }
 
 .hamburger span {

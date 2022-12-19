@@ -1,7 +1,7 @@
 .navlist {
-    display: none;
-    /* transform: translateX(120%); */
-    /* transition: all 0.5s ease; */
+    /* display: none; */
+    /* transform: translateX(120%);
+    transition: all 0.5s ease; */
     background-color: #f3eee8;
     position: fixed;
     top: 80px;
@@ -15,7 +15,7 @@
     margin-bottom: 1rem;
 }
 
-.navlist a {
+.navlist li a {
     color: var(--links-color);
     text-decoration: none;
     padding: 1rem;
@@ -25,4 +25,25 @@
 .navlist a:hover {
     color: var(--primary-green-color);
     opacity: 0.5;
+}
+
+@media (min-width: 764px) {
+
+    .hamburger {
+        display: none;
+    } 
+
+    .navlist {
+        display: flex;
+        background: none;
+        position: static;
+        margin-top: -10px;
+        right: 0;
+
+    }
+
+    .navlist li a {
+        margin-right: 1rem;
+    }
+
 }

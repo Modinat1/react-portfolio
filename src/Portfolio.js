@@ -6,12 +6,12 @@ import 'aos/dist/aos.css';
 // import images
 import myPhoto from './aasets/MyPhoto.jpeg';
 import projectImg_1 from './aasets/project 1.png'
-import projectImg_2 from './aasets/project 2-min.png'
+import projectImg_2 from './aasets/project 2.png'
 import projectImg_3 from './aasets/project 3-min.png'
-import projectImg_4 from './aasets/project 4.png'
+import projectImg_4 from './aasets/project 4-min.png'
 
 // import CV
-import CV from './aasets/Modinat-Adenike-Adesola CV.docx';
+import CV from './aasets/Modinat-Adenike-Adesola CV.pdf';
 
 // import icons
 import {FaLinkedinIn} from 'react-icons/fa';
@@ -23,6 +23,7 @@ import {FaRegEnvelope} from 'react-icons/fa';
 import "./portfolio.css"
 import {Hamburger} from './components/Hamburger/Hamburger'
 import {NavLinks} from './components/NavLinks/NavLinks'
+// import { Navbar } from './components/Navbar/Navbar';
 
 
 function Portfolio() {
@@ -38,13 +39,12 @@ function Portfolio() {
   <div className="container">
     {/* NAV SECTION */}
     <header>
+      {/* <Navbar openBurger = {openBurger} burgerHandle = {burgerHandle}/> */}
       <nav id="navbar">
         <div>
           <h3>Deenah</h3>
         </div>
         {openBurger ? <NavLinks/> : null}
-        {/* {openBurger || <NavLinks/>} */}
-        
         <Hamburger burgerHandle = {burgerHandle} />
       </nav>
     </header>
@@ -56,8 +56,7 @@ function Portfolio() {
       <h1 className="profile-role">I build front-end products.</h1>
       <p>I'm a resourceful, detail-oriented front-end developer.</p>
       <p>
-        I turn UI designs into codes, by creating scalable front-end interfaces
-        with a great user experience
+        I turn prototype designs into responsive user interfaces, with efficient reusable codes.
       </p>
       <button className="download-cv">
         <a href={CV} download=" "> Download CV</a>
@@ -76,23 +75,19 @@ function Portfolio() {
           </p>
           <p>
             In year 2020, I started by learning html, and my interest in
-            programming grew from there.
+            programming grew.
           </p>
+          <p>I recently finished a software development fellowship at Tiidelab, where I was able to broaden my technical skills, soft skills
+            and interpersonal relationships.
+          </p>
+
           <p>
-            I have since then undergone different software development training,
-            one of which was the Innkeeper/8th gear software development traning
-            after which i was opportuned to intern with
-            <span className="keyWords">Paper Work Technologies</span>, where i
-            was responsible for building interfaces and
-            <span className="keyWords">SEO optimization</span>
-          </p>
-          <p>
-            I'm currently a fellow at <span className="keyWords">Tiidelab</span>
-            , to further broaden not just my
-            <span className="keyWords">technical skills</span>, but also my <span className="keyWords">soft-skills</span> adenike
-            <span className="keyWords">professional skills</span>
-          </p>
-          <p>I'm currently skilled in html, css, javascript and react </p>
+            I was also opportuned to undergo a web development training at LSETF/USADF/8th Gear web development training,
+            after which i was opportuned to intern with <span className="keyWords">Paper Work Technologies</span>, where I
+            was responsible for building user interfaces with html, css and javascript </p>
+
+          <p>I'm currently skilled in html, css, javascript, react, context API </p>
+
           <div className="icons">
             <a href="https://github.com/Modinat1"> <FaGithub className='icon'/> </a>
 
@@ -133,10 +128,14 @@ function Portfolio() {
           <p>
             An e-commerce app that enables buying and selling of farm produce
           </p>
+            
           <div className="tech-used">
+          <a href=''> <FaGithub/></a>
             <span>React</span>
             <span>ContextAPI</span>
           </div>
+
+          
         </div>
       </div>
 
@@ -144,16 +143,16 @@ function Portfolio() {
       <div className="project project-odd">
         <div className="project-screenshot" data-aos="fade-left" data-aos-duration="2000">
           <div className="overlay">
-            <img src={projectImg_2} alt=" " />
+            <a href="https://myhelperng.netlify.app/"><img src={projectImg_2} alt=" " /></a>
           </div>
         </div>
         <div className="project-info" data-aos="fade-right" data-aos-duration="2000">
-          <h4>Weather App</h4>
+          <h4>MyHelperNG</h4>
           <p>
-            A weather application, that uses the open weather API to give
-            weather report in any part of the searched world
+            This is an app that matches communities or organizations with volunteers/artisans for volunteering help.
           </p>
           <div className="tech-used">
+            <a href='https://github.com/zuri-training/MyHelperNg-fe-pjt-34'> <FaGithub/></a>
             <span>html</span>
             <span>css</span>
             <span>javascript</span>
@@ -164,7 +163,7 @@ function Portfolio() {
       {/* project 3 */}
       <div className="project">
         <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
-        <img src={projectImg_3} alt=" " />
+          <a href="http://paperworktechnologies.netlify.app/"><img src={projectImg_3} alt=" " /></a>
         </div>
         <div className="project-info" data-aos="fade-left" data-aos-duration="2000">
           <h4>Paper work Technologies</h4>
@@ -174,6 +173,7 @@ function Portfolio() {
             to thier clients.
           </p>
           <div className="tech-used">
+            <a href='https://github.com/Modinat1/paperwork'> <FaGithub/></a>
             <span>html</span>
             <span>css</span>
             <span>javascript</span>
@@ -184,12 +184,14 @@ function Portfolio() {
       {/* project 4 */}
       <div className="project">
         <div className="project-screenshot" data-aos="fade-left" data-aos-duration="2000">
-          <img src={projectImg_4} alt=" " />
+          <a href="myyweatherapp.netlify.app"><img src={projectImg_4} alt=" " /></a>
         </div>
         <div className="project-info" data-aos="fade-right" data-aos-duration="2000">
-          <h4>Joke App</h4>
-          <p>An App that generates all kinds of jokes from an API</p>
+          <h4>Weather App</h4>
+          <p> A weather application, that uses the open weather API to give
+            weather report in any part of the searched world</p>
           <div className="tech-used">
+            <a href='https://github.com/Modinat1/weather-app'> <FaGithub/></a>
             <span>html</span>
             <span>css</span>
             <span>javascript</span>

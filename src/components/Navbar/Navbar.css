@@ -1,0 +1,5 @@
+/* Navbar styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+}
