@@ -1,7 +1,4 @@
 .navlist {
-    /* display: none; */
-    /* transform: translateX(120%);
-    transition: all 0.5s ease; */
     background-color: #f3eee8;
     position: fixed;
     top: 80px;
@@ -28,16 +25,12 @@
 }
 
 @media (min-width: 764px) {
-
-    .hamburger {
-        display: none;
-    } 
-
     .navlist {
         display: flex;
         background: none;
         position: static;
-        margin-top: -10px;
+        /* margin-top: -10px; */
+        margin-top: -1rem;
         right: 0;
 
     }

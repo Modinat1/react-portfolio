@@ -1,5 +1,9 @@
 /* Navbar styling */
+.logo{
+    margin-top: -1rem;
+}
 nav {
     display: flex;
     justify-content: space-between;
+    margin-top: 3rem;
 }

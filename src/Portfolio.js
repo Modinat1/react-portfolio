@@ -21,13 +21,13 @@ import {FaRegEnvelope} from 'react-icons/fa';
 
 // Css imported
 import "./portfolio.css"
-import {Hamburger} from './components/Hamburger/Hamburger'
-import {NavLinks} from './components/NavLinks/NavLinks'
-// import { Navbar } from './components/Navbar/Navbar';
+// import {Hamburger} from './components/Hamburger/Hamburger'
+// import {NavLinks} from './components/NavLinks/NavLinks'
+import { Navbar } from './components/Navbar/Navbar';
 
 
 function Portfolio() {
-  const [openBurger, setOpenBurger] = useState(false)
+  const [openBurger, setOpenBurger] = useState(true)
   const burgerHandle = () => {
     setOpenBurger(!openBurger)
   }
@@ -37,16 +37,9 @@ function Portfolio() {
   return (
    <>
   <div className="container">
-    {/* NAV SECTION */}
+    {/* HEADER SECTION */}
     <header>
-      {/* <Navbar openBurger = {openBurger} burgerHandle = {burgerHandle}/> */}
-      <nav id="navbar">
-        <div>
-          <h3>Deenah</h3>
-        </div>
-        {openBurger ? <NavLinks/> : null}
-        <Hamburger burgerHandle = {burgerHandle} />
-      </nav>
+      <Navbar openBurger = {openBurger} burgerHandle = {burgerHandle}/>
     </header>
 
     {/* HERO SECTION */}

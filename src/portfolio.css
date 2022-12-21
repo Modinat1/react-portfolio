@@ -66,15 +66,15 @@ body {
   /* transform: translateX(0); */
 }
 /* nav sytling */
-#navbar{
+/* #navbar{
   position: fixed;
   top: 2rem;
   left: 3.5rem;
-}
+} */
 
 /* HERO STYLING */
 #hero {
-  margin-top: 5rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -245,10 +245,10 @@ footer {
   .hamburger {
     display: none;
   }
-  #navbar{
+  /* #navbar{
     left: 8.5rem;
     top: 2.5rem;
-  }
+  } */
  /*  nav ul {
     display: flex;
     background: none;
@@ -264,7 +264,7 @@ footer {
 
   /* Hero large screen styling */
   #hero {
-    margin-top: 8rem;
+    margin-top: 2rem;
     text-align: left;
   }
 
