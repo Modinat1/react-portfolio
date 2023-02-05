@@ -19,6 +19,7 @@ body {
   background-color: var(--backgroungColor);
   color: var(--textColor);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
 }
 
 /* Global styling */
@@ -60,18 +61,27 @@ body {
   color: var(--primary-green-color);
   opacity: 0.5;
 }
-
-.show {
-  display: block;
-  /* transform: translateX(0); */
+.larger_nav {
+  display: none;
 }
-/* nav sytling */
-/* #navbar{
+/* Hamburger styling */
+.hamburger {
   position: fixed;
-  top: 2rem;
-  left: 3.5rem;
-} */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  top: 1.5rem;
+  right: 3rem;
+}
 
+.hamburger span {
+  display: block;
+  background-color: var(--textColor);
+  width: 20px;
+  height: 3px;
+  margin-bottom: 3px;
+}
 /* HERO STYLING */
 #hero {
   margin-top: 2rem;
@@ -235,7 +245,12 @@ footer {
 }
 
 @media (min-width: 764px) {
-
+  .mobile_nav {
+      display: none;
+  }
+.larger_nav {
+  display: flex;
+}
   #about,
   #contacts,
   #projects {
@@ -245,22 +260,7 @@ footer {
   .hamburger {
     display: none;
   }
-  /* #navbar{
-    left: 8.5rem;
-    top: 2.5rem;
-  } */
- /*  nav ul {
-    display: flex;
-    background: none;
-    position: static;
-    margin-top: -10px;
-    right: 0;
 
-  }
-
-  nav ul a {
-    margin-right: 1rem;
-  } */
 
   /* Hero large screen styling */
   #hero {

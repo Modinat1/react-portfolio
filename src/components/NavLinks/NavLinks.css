@@ -1,26 +1,40 @@
 .navlist {
-    background-color: #f3eee8;
+    background-color: var(--primary-green-color);
+    display: block;
     position: fixed;
     top: 80px;
-    right: 0;
+    right: 40px;
     padding: 1rem;
-    text-align: right;
+    text-align: center;
     list-style: none;
+    width: 80%;
 }
 
 .navlist li {
-    margin-bottom: 1rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.navlist li::after{
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #fff;
+    display: block;
+    width: 80%;
+    bottom: -8px;
+    right: 10%;
+    margin: auto;
+    opacity: 0.15
 }
 
 .navlist li a {
-    color: var(--links-color);
+    color: #fff;
     text-decoration: none;
     padding: 1rem;
     transition: opacity 0.5s ease;
+    opacity: 0.75;
 }
-
 .navlist a:hover {
-    color: var(--primary-green-color);
+    color: #fff;
     opacity: 0.5;
 }
 
@@ -29,7 +43,6 @@
         display: flex;
         background: none;
         position: static;
-        /* margin-top: -10px; */
         margin-top: -1rem;
         right: 0;
 

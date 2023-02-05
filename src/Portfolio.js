@@ -21,16 +21,12 @@ import {FaRegEnvelope} from 'react-icons/fa';
 
 // Css imported
 import "./portfolio.css"
-// import {Hamburger} from './components/Hamburger/Hamburger'
-// import {NavLinks} from './components/NavLinks/NavLinks'
 import { Navbar } from './components/Navbar/Navbar';
 
 
 function Portfolio() {
-  const [openBurger, setOpenBurger] = useState(true)
-  const burgerHandle = () => {
-    setOpenBurger(!openBurger)
-  }
+  const [openBurger, setOpenBurger] = useState(false)
+  
   useEffect(() => {
         AOS.init();
       }, [])
@@ -39,7 +35,7 @@ function Portfolio() {
   <div className="container">
     {/* HEADER SECTION */}
     <header>
-      <Navbar openBurger = {openBurger} burgerHandle = {burgerHandle}/>
+      <Navbar openBurger = {openBurger} setOpenBurger= {setOpenBurger}/>
     </header>
 
     {/* HERO SECTION */}

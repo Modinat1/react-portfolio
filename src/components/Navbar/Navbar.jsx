@@ -1,20 +1,23 @@
 import React from 'react'
-import { Hamburger } from '../Hamburger/Hamburger'
-import { NavLinks } from '../NavLinks/NavLinks'
+import MobileNavbar from '../MobileNavbar';
+import LargerScreenNav from '../LargerScreenNav';
 import './Navbar.css';
 
 export const Navbar = (props) => {
-    const {openBurger, burgerHandle} = props
+    const {openBurger, setOpenBurger} = props
   return (
-<React.Fragment>
+<React.Fragment >
     <nav> 
         <div>
           <h3 className='logo'>Deenah</h3>
         </div>
-        {openBurger ? <NavLinks/> : null}
-        {/* <NavLinks/> */}
-        <Hamburger burgerHandle = {burgerHandle}/>
+        <LargerScreenNav/>
+        <MobileNavbar openBurger={openBurger} setOpenBurger = {setOpenBurger}/>
     </nav>
 </React.Fragment>
   )
 }
+
+
+
+export default Navbar
