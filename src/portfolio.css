@@ -149,7 +149,7 @@ body {
 #about img {
   width: 100%;
 }
-/* WORK STYLING */
+/* PROJECT STYLING */
 #projects h3 {
   margin-bottom: 2rem;
 }
@@ -168,6 +168,7 @@ body {
 .project img {
   display: block;
   width: 100%;
+  
   margin: auto;
   transition: all 0.5s ease;
 }

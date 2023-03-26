@@ -107,7 +107,7 @@ function Portfolio() {
     {/* Projects */}
     <section id="projects">
       <h3>Projects</h3>
-      {/* pproject 1 */}
+      {/* project 1 */}
       <div className="project">
         <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
           <img src={projectImg_1} alt=" " />
@@ -128,11 +128,31 @@ function Portfolio() {
         </div>
       </div>
 
-      {/* project 2 */}
+        {/* project 2 */}
       <div className="project project-odd">
         <div className="project-screenshot" data-aos="fade-left" data-aos-duration="2000">
           <div className="overlay">
-            <a href="https://myhelperng.netlify.app/"><img src={projectImg_2} alt=" " /></a>
+            <a href="https://expense-tracker-tau-dusky.vercel.app/"><img src={projectImg_2} alt=" " /></a>
+          </div>
+        </div>
+        <div className="project-info" data-aos="fade-right" data-aos-duration="2000">
+          <h4>Expense Tracker</h4>
+          <p>
+            An app that helps keep track of expenses, both debit  and credit.
+          </p>
+          <div className="tech-used">
+            <a href='https://github.com/Modinat1/expense_tracker'> <FaGithub/></a>
+            <span>React</span>
+            <span>Context API</span>
+          </div>
+        </div>
+      </div>
+
+      {/* project 3 */}
+      <div className="project project-odd">
+        <div className="project-screenshot" data-aos="fade-left" data-aos-duration="2000">
+          <div className="overlay">
+            <a href="https://myhelperng.netlify.app/"><img src={projectImg_3} alt=" " /></a>
           </div>
         </div>
         <div className="project-info" data-aos="fade-right" data-aos-duration="2000">
@@ -149,10 +169,10 @@ function Portfolio() {
         </div>
       </div>
 
-      {/* project 3 */}
+      {/* project 4 */}
       <div className="project">
         <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
-          <a href="http://paperworktechnologies.netlify.app/"><img src={projectImg_3} alt=" " /></a>
+          <a href="http://paperworktechnologies.netlify.app/"><img src={projectImg_4} alt=" " /></a>
         </div>
         <div className="project-info" data-aos="fade-left" data-aos-duration="2000">
           <h4>Paper work Technologies</h4>
@@ -170,7 +190,7 @@ function Portfolio() {
         </div>
       </div>
 
-      {/* project 4 */}
+      {/* project 4
       <div className="project">
         <div className="project-screenshot" data-aos="fade-left" data-aos-duration="2000">
           <a href="myyweatherapp.netlify.app"><img src={projectImg_4} alt=" " /></a>
@@ -186,7 +206,7 @@ function Portfolio() {
             <span>javascript</span>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* contact */}
       <section id="contacts">
