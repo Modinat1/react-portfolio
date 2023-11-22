@@ -7,8 +7,9 @@ import 'aos/dist/aos.css';
 import myPhoto from './aasets/MyPhoto.jpeg';
 import projectImg_1 from './aasets/project 1.png'
 import projectImg_2 from './aasets/project 2.png'
-import projectImg_3 from './aasets/project 3-min.png'
+// import projectImg_3 from './aasets/project 3-min.png'
 import projectImg_4 from './aasets/project 4-min.png'
+import projectImg_5 from './aasets/project_5.png'
 
 // import CV
 import CV from './aasets/Modinat-Adenike-Adesola CV.pdf';
@@ -41,7 +42,7 @@ function Portfolio() {
     {/* HERO SECTION */}
     <section data-aos="fade-right" data-aos-duration="2000" id="hero">
       <h3 className="hi">Hi, my name is</h3>
-      <h1 className="profile-name">Adesola Modinat Adenike.</h1>
+      <h1 className="profile-name">Modinat Adenike Adesola.</h1>
       <h1 className="profile-role">I build front-end products.</h1>
       <p>I'm a resourceful, detail-oriented front-end developer.</p>
       <p>
@@ -57,12 +58,17 @@ function Portfolio() {
       <h3>About Me</h3>
       <div className="about">
         <div className="profile-info" data-aos="fade-right" data-aos-duration="2000">
-          <p>
-            I'm Modinat, I started my journey into tech in the year 2020, after
-            having been encouraged by friends to pick an interest in it since
-            the year 2016.
+           <p>
+            I'm Modinat, a Front-end developer. I'm skilled in React, Context API, Javascript, Html, Css, Tailwind, SQL, python
           </p>
           <p>
+          In my previous experiences, I was able to develop a deep understanding of user interface (UI) and user experience (UX) principles, becoming more proficient in building responsive designs and cross-browser compatibility interfaces.
+          </p>
+          <p>
+            I have been able to contribute to the development of high-quality, scalable, and user-friendly web applications.
+            Collaborated effectively with designers, back-end developers, and product managers to deliver exceptional digital experiences.
+         </p>
+          {/* <p>
             In year 2020, I started by learning html, and my interest in
             programming grew.
           </p>
@@ -73,9 +79,7 @@ function Portfolio() {
           <p>
             I was also opportuned to undergo a web development training at LSETF/USADF/8th Gear web development training,
             after which i was opportuned to intern with <span className="keyWords">Paper Work Technologies</span>, where I
-            was responsible for building user interfaces with html, css and javascript </p>
-
-          <p>I'm currently skilled in html, css, javascript, react, context API </p>
+            was responsible for building user interfaces with html, css and javascript </p> */}
 
           <div className="icons">
             <a href="https://github.com/Modinat1"> <FaGithub className='icon'/> </a>
@@ -104,11 +108,32 @@ function Portfolio() {
       </div>
     </section>
 
-    {/* Projects */}
+    {/* Projects 1*/}
     <section id="projects">
       <h3>Projects</h3>
-      {/* project 1 */}
+        {/* project 1 */}
       <div className="project">
+        <div className="project-screenshot" data-aos="fade-left" data-aos-duration="2000">
+          <div className="overlay">
+            <a href="https://lms-ebon-six.vercel.app"><img src={projectImg_5} alt=" " /></a>
+          </div>
+        </div>
+        <div className="project-info" data-aos="fade-right" data-aos-duration="2000">
+          <h4>LMS</h4>
+          <p>
+            A learning management system interface.
+          </p>
+          <div className="tech-used">
+            <a href='#'> <FaGithub/></a>
+            <span>React</span>
+           <span>ContextAPI</span>
+            <span>TailwindCss</span>
+        </div>
+      </div>
+      </div>
+      
+      {/* project 2 */}
+      <div className="project ">
         <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
           <img src={projectImg_1} alt=" " />
         </div>
@@ -128,7 +153,7 @@ function Portfolio() {
         </div>
       </div>
 
-        {/* project 2 */}
+        {/* project 3 */}
       <div className="project project-odd">
         <div className="project-screenshot" data-aos="fade-left" data-aos-duration="2000">
           <div className="overlay">
@@ -148,7 +173,7 @@ function Portfolio() {
         </div>
       </div>
 
-      {/* project 3 */}
+      {/* project 4
       <div className="project project-odd">
         <div className="project-screenshot" data-aos="fade-left" data-aos-duration="2000">
           <div className="overlay">
@@ -167,9 +192,9 @@ function Portfolio() {
             <span>javascript</span>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      {/* project 4 */}
+      {/* project 5 */}
       <div className="project">
         <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
           <a href="http://paperworktechnologies.netlify.app/"><img src={projectImg_4} alt=" " /></a>
@@ -189,24 +214,6 @@ function Portfolio() {
           </div>
         </div>
       </div>
-
-      {/* project 4
-      <div className="project">
-        <div className="project-screenshot" data-aos="fade-left" data-aos-duration="2000">
-          <a href="myyweatherapp.netlify.app"><img src={projectImg_4} alt=" " /></a>
-        </div>
-        <div className="project-info" data-aos="fade-right" data-aos-duration="2000">
-          <h4>Weather App</h4>
-          <p> A weather application, that uses the open weather API to give
-            weather report in any part of the searched world</p>
-          <div className="tech-used">
-            <a href='https://github.com/Modinat1/weather-app'> <FaGithub/></a>
-            <span>html</span>
-            <span>css</span>
-            <span>javascript</span>
-          </div>
-        </div>
-      </div> */}
 
       {/* contact */}
       <section id="contacts">
