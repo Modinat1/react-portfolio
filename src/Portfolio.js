@@ -10,9 +10,11 @@ import projectImg_2 from './aasets/project 2.png'
 // import projectImg_3 from './aasets/project 3-min.png'
 import projectImg_4 from './aasets/project 4-min.png'
 import projectImg_5 from './aasets/project_5.png'
+import projectImg_6 from './aasets/project_6.png'
+import projectImg_7 from './aasets/project_7.png'
 
 // import CV
-import CV from './aasets/Modinat-Adenike-Adesola CV.pdf';
+import CV from './aasets/CV.pdf'
 
 // import icons
 import {FaLinkedinIn} from 'react-icons/fa';
@@ -109,7 +111,7 @@ function Portfolio() {
     </section>
 
     {/* Projects 1*/}
-    <section id="projects">
+    <section id="project project-odd">
       <h3>Projects</h3>
         {/* project 1 */}
       <div className="project">
@@ -131,9 +133,50 @@ function Portfolio() {
         </div>
       </div>
       </div>
-      
-      {/* project 2 */}
+
+       {/* project 2 */}
       <div className="project ">
+        <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
+          <a href="https://voting-app-ashen.vercel.app/"><img src={projectImg_6} alt=" " /></a>
+        </div>
+        <div className="project-info" data-aos="fade-left" data-aos-duration="2000">
+          <h4>Voting app</h4>
+          <p>
+            A voting app interface
+          </p>
+          <div className="tech-used">
+          <a href=''> <FaGithub/></a>
+            <span>React</span>
+            <span>TailwindCSS</span>
+          </div>
+
+          
+        </div>
+      </div>
+
+          {/* project 3 */}
+      <div className="project project-odd">
+        <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
+          <a href="https://med-chat-tawny.vercel.app/"><img src={projectImg_7} alt=" " /></a>
+        </div>
+        <div className="project-info" data-aos="fade-left" data-aos-duration="2000">
+          <h4>MedChat</h4>
+          <p>
+            A medical chatting app, an ongoing project, where openAI API will be integrated
+          </p>
+            
+          <div className="tech-used">
+          <a href=''> <FaGithub/></a>
+            <span>React</span>
+            <span>TailwindCSS</span>
+          </div>
+
+          
+        </div>
+      </div>
+      
+      {/* project 4 */}
+      <div className="project">
         <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
           <img src={projectImg_1} alt=" " />
         </div>
@@ -153,7 +196,7 @@ function Portfolio() {
         </div>
       </div>
 
-        {/* project 3 */}
+        {/* project 5 */}
       <div className="project project-odd">
         <div className="project-screenshot" data-aos="fade-left" data-aos-duration="2000">
           <div className="overlay">
@@ -173,28 +216,8 @@ function Portfolio() {
         </div>
       </div>
 
-      {/* project 4
-      <div className="project project-odd">
-        <div className="project-screenshot" data-aos="fade-left" data-aos-duration="2000">
-          <div className="overlay">
-            <a href="https://myhelperng.netlify.app/"><img src={projectImg_3} alt=" " /></a>
-          </div>
-        </div>
-        <div className="project-info" data-aos="fade-right" data-aos-duration="2000">
-          <h4>MyHelperNG</h4>
-          <p>
-            This is an app that matches communities or organizations with volunteers/artisans for volunteering help.
-          </p>
-          <div className="tech-used">
-            <a href='https://github.com/zuri-training/MyHelperNg-fe-pjt-34'> <FaGithub/></a>
-            <span>html</span>
-            <span>css</span>
-            <span>javascript</span>
-          </div>
-        </div>
-      </div> */}
 
-      {/* project 5 */}
+      {/* project 6 */}
       <div className="project">
         <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
           <a href="http://paperworktechnologies.netlify.app/"><img src={projectImg_4} alt=" " /></a>
@@ -226,7 +249,7 @@ function Portfolio() {
           </button>
         </div>
       </section>
-      <footer>Deenah © copyright 2022</footer>
+      <footer>Deenah © copyright 2023</footer>
     </section>
   </div>
 </>
