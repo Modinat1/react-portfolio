@@ -12,6 +12,7 @@ import projectImg_4 from './aasets/project 4-min.png'
 import projectImg_5 from './aasets/project_5.png'
 import projectImg_6 from './aasets/project_6.png'
 import projectImg_7 from './aasets/project_7.png'
+import projectImg_8 from './aasets/project_8.png'
 
 // import CV
 import CV from './aasets/CV.pdf'
@@ -33,6 +34,8 @@ function Portfolio() {
   useEffect(() => {
         AOS.init();
       }, [])
+
+    const currentYear = new Date().getFullYear()
   return (
    <>
   <div className="container">
@@ -61,7 +64,7 @@ function Portfolio() {
       <div className="about">
         <div className="profile-info" data-aos="fade-right" data-aos-duration="2000">
            <p>
-            I'm Modinat, a Front-end developer. I'm skilled in React, Context API, Javascript, Html, Css, Tailwind, SQL, python
+            I'm Modinat, a Front-end developer. I'm skilled in React, Context API, Redux Tool Kit, Javascript, Html, Css, Tailwind, SQL, python
           </p>
           <p>
           In my previous experiences, I was able to develop a deep understanding of user interface (UI) and user experience (UX) principles, becoming more proficient in building responsive designs and cross-browser compatibility interfaces.
@@ -70,18 +73,6 @@ function Portfolio() {
             I have been able to contribute to the development of high-quality, scalable, and user-friendly web applications.
             Collaborated effectively with designers, back-end developers, and product managers to deliver exceptional digital experiences.
          </p>
-          {/* <p>
-            In year 2020, I started by learning html, and my interest in
-            programming grew.
-          </p>
-          <p>I recently finished a software development fellowship at Tiidelab, where I was able to broaden my technical skills, soft skills
-            and interpersonal relationships.
-          </p>
-
-          <p>
-            I was also opportuned to undergo a web development training at LSETF/USADF/8th Gear web development training,
-            after which i was opportuned to intern with <span className="keyWords">Paper Work Technologies</span>, where I
-            was responsible for building user interfaces with html, css and javascript </p> */}
 
           <div className="icons">
             <a href="https://github.com/Modinat1"> <FaGithub className='icon'/> </a>
@@ -113,7 +104,31 @@ function Portfolio() {
     {/* Projects 1*/}
     <section id="project project-odd">
       <h3>Projects</h3>
-        {/* project 1 */}
+
+       {/* project 1 */}
+      <div className="project project-odd">
+        <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
+          <a href="https://learn-beta-three.vercel.app/"><img src={projectImg_8} alt=" " /></a>
+        </div>
+        <div className="project-info" data-aos="fade-left" data-aos-duration="2000">
+          <h4>LearnBeta</h4>
+          <p>
+            A Learning Platform for senior school students
+          </p>
+          <div className="tech-used">
+          <a href=''> <FaGithub/></a>
+            <span>React</span>
+            <span>Context API</span>
+            <span>TailwindCSS</span>
+            <span>Express js</span>
+            <span>Mongo Db</span>
+          </div>
+
+          
+        </div>
+      </div>
+
+           {/* project 2 */}
       <div className="project">
         <div className="project-screenshot" data-aos="fade-left" data-aos-duration="2000">
           <div className="overlay">
@@ -134,8 +149,8 @@ function Portfolio() {
       </div>
       </div>
 
-       {/* project 2 */}
-      <div className="project ">
+       {/* project 3 */}
+      <div className="project project-odd">
         <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
           <a href="https://voting-app-ashen.vercel.app/"><img src={projectImg_6} alt=" " /></a>
         </div>
@@ -154,8 +169,8 @@ function Portfolio() {
         </div>
       </div>
 
-          {/* project 3 */}
-      <div className="project project-odd">
+          {/* project 4 */}
+      <div className="project ">
         <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
           <a href="https://med-chat-tawny.vercel.app/"><img src={projectImg_7} alt=" " /></a>
         </div>
@@ -175,8 +190,8 @@ function Portfolio() {
         </div>
       </div>
       
-      {/* project 4 */}
-      <div className="project">
+      {/* project 5 */}
+      <div className="project project-odd">
         <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
           <img src={projectImg_1} alt=" " />
         </div>
@@ -196,8 +211,8 @@ function Portfolio() {
         </div>
       </div>
 
-        {/* project 5 */}
-      <div className="project project-odd">
+        {/* project 6 */}
+      <div className="project ">
         <div className="project-screenshot" data-aos="fade-left" data-aos-duration="2000">
           <div className="overlay">
             <a href="https://expense-tracker-tau-dusky.vercel.app/"><img src={projectImg_2} alt=" " /></a>
@@ -217,8 +232,8 @@ function Portfolio() {
       </div>
 
 
-      {/* project 6 */}
-      <div className="project">
+      {/* project 7 */}
+      <div className="project project-odd">
         <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
           <a href="http://paperworktechnologies.netlify.app/"><img src={projectImg_4} alt=" " /></a>
         </div>
@@ -249,7 +264,7 @@ function Portfolio() {
           </button>
         </div>
       </section>
-      <footer>Deenah © copyright 2023</footer>
+      <footer>Deenah © copyright {currentYear}</footer>
     </section>
   </div>
 </>

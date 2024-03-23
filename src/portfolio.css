@@ -168,7 +168,7 @@ body {
 .project img {
   display: block;
   width: 100%;
-  
+
   margin: auto;
   transition: all 0.5s ease;
 }
@@ -184,7 +184,7 @@ body {
   color: var(--primary-green-color);
   margin-top: 1rem;
 }
-.tech-used a{
+.tech-used a {
   color: var(--primary-green-color);
   margin-right: 1rem;
 }
@@ -220,7 +220,7 @@ footer {
 }
 
 /* Tab media queries */
-@media(min-width: 600px) {
+@media (min-width: 600px) {
   .work-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -247,11 +247,11 @@ footer {
 
 @media (min-width: 764px) {
   .mobile_nav {
-      display: none;
+    display: none;
   }
-.larger_nav {
-  display: flex;
-}
+  .larger_nav {
+    display: flex;
+  }
   #about,
   #contacts,
   #projects {
@@ -261,7 +261,6 @@ footer {
   .hamburger {
     display: none;
   }
-
 
   /* Hero large screen styling */
   #hero {
