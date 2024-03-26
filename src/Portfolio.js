@@ -108,13 +108,13 @@ function Portfolio() {
        {/* project 1 */}
       <div className="project project-odd">
         <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
-          <a href="https://learn-beta-three.vercel.app/"><img src={projectImg_8} alt=" " /></a>
+          <a href="https://learn-beta-nine.vercel.app/"><img src={projectImg_8} alt=" " /></a>
         </div>
         <div className="project-info" data-aos="fade-left" data-aos-duration="2000">
           <h4>LearnBeta</h4>
           <p>
             A Learning Platform for senior school students
-          </p>
+          </p> 
           <div className="tech-used">
           <a href=''> <FaGithub/></a>
             <span>React</span>
