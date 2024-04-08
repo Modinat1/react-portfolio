@@ -13,6 +13,7 @@ import projectImg_5 from './aasets/project_5.png'
 import projectImg_6 from './aasets/project_6.png'
 import projectImg_7 from './aasets/project_7.png'
 import projectImg_8 from './aasets/project_8.png'
+import projectImg_9 from './aasets/project_9.png'
 
 // import CV
 import CV from './aasets/CV.pdf'
@@ -101,12 +102,36 @@ function Portfolio() {
       </div>
     </section>
 
-    {/* Projects 1*/}
+     {/* Projects*/}
     <section id="project project-odd">
       <h3>Projects</h3>
 
        {/* project 1 */}
       <div className="project project-odd">
+        <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
+          <a href="https://vsured-app-smartteller.vercel.app/"><img src={projectImg_9} alt=" " /></a>
+        </div>
+        <div className="project-info" data-aos="fade-left" data-aos-duration="2000">
+          <h4>Vsured</h4>
+          <p>
+            A Security alert Platform
+          </p> 
+          <div className="tech-used">
+          <a href=''> <FaGithub/></a>
+            <span>React</span>
+            <span>Redux Tool Kit</span>
+            <span>TailwindCSS</span>
+            <span>Express js</span>
+            <span>Mongo Db</span>
+          </div>
+
+          
+        </div>
+      </div>
+   
+
+       {/* project 2 */}
+      <div className="project">
         <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
           <a href="https://learn-beta-nine.vercel.app/"><img src={projectImg_8} alt=" " /></a>
         </div>
@@ -128,8 +153,8 @@ function Portfolio() {
         </div>
       </div>
 
-           {/* project 2 */}
-      <div className="project">
+           {/* project 3 */}
+      <div className="project project-odd">
         <div className="project-screenshot" data-aos="fade-left" data-aos-duration="2000">
           <div className="overlay">
             <a href="https://lms-ebon-six.vercel.app"><img src={projectImg_5} alt=" " /></a>
@@ -149,8 +174,8 @@ function Portfolio() {
       </div>
       </div>
 
-       {/* project 3 */}
-      <div className="project project-odd">
+       {/* project 4 */}
+      <div className="project">
         <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
           <a href="https://voting-app-ashen.vercel.app/"><img src={projectImg_6} alt=" " /></a>
         </div>
@@ -169,8 +194,8 @@ function Portfolio() {
         </div>
       </div>
 
-          {/* project 4 */}
-      <div className="project ">
+          {/* project 5 */}
+      <div className="project project-odd">
         <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
           <a href="https://med-chat-tawny.vercel.app/"><img src={projectImg_7} alt=" " /></a>
         </div>
@@ -190,8 +215,8 @@ function Portfolio() {
         </div>
       </div>
       
-      {/* project 5 */}
-      <div className="project project-odd">
+      {/* project 6 */}
+      <div className="project">
         <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
           <img src={projectImg_1} alt=" " />
         </div>
@@ -211,8 +236,8 @@ function Portfolio() {
         </div>
       </div>
 
-        {/* project 6 */}
-      <div className="project ">
+        {/* project 7 */}
+      <div className="project project-odd">
         <div className="project-screenshot" data-aos="fade-left" data-aos-duration="2000">
           <div className="overlay">
             <a href="https://expense-tracker-tau-dusky.vercel.app/"><img src={projectImg_2} alt=" " /></a>
@@ -232,8 +257,8 @@ function Portfolio() {
       </div>
 
 
-      {/* project 7 */}
-      <div className="project project-odd">
+      {/* project 8 */}
+      <div className="project">
         <div className="project-screenshot" data-aos="fade-right" data-aos-duration="2000">
           <a href="http://paperworktechnologies.netlify.app/"><img src={projectImg_4} alt=" " /></a>
         </div>
