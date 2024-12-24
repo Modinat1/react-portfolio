@@ -65,7 +65,7 @@ function Portfolio() {
       <div className="about">
         <div className="profile-info" data-aos="fade-right" data-aos-duration="2000">
            <p>
-            I'm Modinat, a Front-end developer. I'm skilled in React, Context API, Redux Tool Kit, Javascript, Html, Css, Tailwind, SQL, python
+            I'm Modinat, a Front-end developer. I'm skilled in NextJS, TypeScript, React, Context API, Redux Tool Kit, Javascript, Html, Css, Tailwind, SQL, python
           </p>
           <p>
           In my previous experiences, I was able to develop a deep understanding of user interface (UI) and user experience (UX) principles, becoming more proficient in building responsive designs and cross-browser compatibility interfaces.
